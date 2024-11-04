@@ -1,0 +1,32 @@
+<!-- assets.html -->
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Minecraft Clone Assets</title>
+</head>
+<body>
+	<script>
+		const assets = [];
+
+		// Load images
+		const grassBlockImage = new Image();
+		grassBlockImage.src = "grass_block.png";
+		assets.push(grassBlockImage);
+
+		// Load sounds
+		const dirtDiggingSound = new Audio();
+		dirtDiggingSound.src = "dirt_digging.mp3";
+		assets.push(dirtDiggingSound);
+
+		// Wait for all assets to load
+		assets.forEach((asset) => {
+			asset.addEventListener("load", () => {
+				// All assets have been loaded
+				// Start the game
+				startGame();
+			});
+		});
+	</script>
+</body>
+</html>
