@@ -1,1 +1,1 @@
-# Minecraft
+https://classic.minecraft.net/
